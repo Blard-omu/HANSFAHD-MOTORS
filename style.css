@@ -2,24 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* background-color: black; */
+    font-family: 'Segoe UI', Tahoma,  sans-serif;
 }
-
 .notif-icon, .user{
     width: 30px;
     display: block;
     border-radius: 50%;
 }
-
 .notif-icon, .user:hover{
     cursor: pointer;
-    background-color: tomato;
 }
-
 .notif-icon{
     position: relative;
 }
-
 .notif-icon-badge{
     width: 20px;
     height: 20px;
@@ -33,50 +28,44 @@
     top: -15px;
     left: -10px;
 }
-
 .notif-wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
+.nav-item{
+    padding-left: 2rem;  
+}
 
 /* Home */
 .Home{
     padding-block: 50px;
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
 }
-
 .Home-content{
     width: 45%;
     color: aliceblue;
 }
-
 .Home-content h1{
-    font-size: 4rem;
-    font-family:-apple-system, 'Segoe UI';
+    font-size: 4.6rem;
+    font-family:  'Segoe UI';
 }
-
 .Home-img{
     width: 48%;
     opacity: 0.8;
 }
-
 .Home-img .main-img{
     width: 100%;
     border-top-left-radius: 45%;
     border-top-right-radius: 45%;
 }
-
 .brand{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.927);
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     border-bottom-right-radius: 45%;
     border-bottom-left-radius: 45%;
@@ -84,127 +73,43 @@
 .brand-name{
     width: 23%;
     padding: 15px;
+    
 }
-.brand-name img{
-    width: 50%;
-}
-
-.get-started{
-    margin-top: 1rem;
-}
-
-.get-started .btn{
-    width: 750%;
-}
-
-
 /* Media Query */
 @media(max-width: 918px) {
     .Home-content h1{
     font-size: 3rem;
 }    
 }
-
-
 @media (max-width:678px) {
-    *{
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-
-
     .Home{
-        display: flex;
         flex-direction:column-reverse;
         width: 100%;
-        height: 100vh;
+        padding-block: 10px;
     }
-
-
-.Home-img{
-    width: 100%;
-    margin: 1rem;
-    opacity: 0.8;
-    display: none;
+.Home-img, .Home-content{
+    width: 90%;
+    margin: 0 5%;
 }
-
-    .Home-img img{
-    width: 100%;
-    border-top-left-radius: 0%;
-    border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
-    border-bottom-left-radius: 0%;
-}
-    .Home-content{
-        width: 100%;
-        margin: 1rem;
-    }
-
     .Home-content h1{
         font-size: 2rem;
+        margin-top: 1rem;
     }
-
-    .get-started{
-        width: 90%;
-    }
-
-    .brand{
-    width: 100%;
-    align-content: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.brand-name{
-    width: 50px;
-    padding: 10px;
-}
-
+ 
 }
 
 @media (max-width:339px) {
-    *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    }
-
-
     .Home{
         padding-bottom: 1rem;
     }
-
-    .Home-content{
-        width: 100%;
-        /* margin: 1rem; */
-        margin-bottom: bottom;
-    }
-
-    .Home-content h1{
-        font-size: 1rem;
-    }
-
-    .get-started{
-        width: 90%;
-    }
-
     .navbar-toggler{
         display: block;
         float: left;
         margin-top: 1rem;
     }
-
-    .logo{
-        display: none;
-    }
     
-
 }
-
 @media (max-width: 991px) {
-
     .user{
     width: 30px;
     display: none;
@@ -222,16 +127,12 @@
 }
     
 }
-
 @media (min-width: 991px) {
     
     .user2{
     display: none;
 }
-
 .user{
     margin-right: 1rem;
 }
-
-    
 }
