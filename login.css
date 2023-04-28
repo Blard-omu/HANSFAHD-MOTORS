@@ -1,8 +1,8 @@
 html,
 body {
   background-image: linear-gradient(to right,rgba(0, 0, 0, 0.667) 30%, tomato);
+  height: 100vh;
 }
-
 
 .form2-wrapper{
   align-items: center;
@@ -52,16 +52,12 @@ svg{
 }
 
 @media (max-width:339px) {
-    *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    }
+    
+    
 
-
-    .Home{
+    /* .Home{
         padding-bottom: 1rem;
-    }
+    } */
 
     .Home-content{
         width: 100%;
@@ -82,8 +78,8 @@ svg{
         margin-top: 1rem;
     }
 
-    .logo{
+    /* .logo{
         display: none;
-    }
+    } */
 
 }
